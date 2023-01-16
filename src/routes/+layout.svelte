@@ -85,7 +85,7 @@
 		/* padding: calc(4 * var(--margin)) calc(4 * var(--margin)); */
 
 		/* margin: 0 auto; */
-		width: 100%;
+		width: 100vw;
 		box-sizing: border-box;
 	}
 
