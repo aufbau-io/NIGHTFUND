@@ -275,6 +275,14 @@ const tick = () => {
   id = window.requestAnimationFrame(tick);
 };
 
+gsap.to(sectionMeshes[0].rotation, {
+      duration: 1.5,
+      ease: "power2.inOut",
+      x: "+=2",
+      y: "+=3",
+      z: "+=1.5",
+    });
+
 tick();
 </script>
 
