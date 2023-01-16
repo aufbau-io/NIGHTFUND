@@ -207,7 +207,7 @@ window.addEventListener("scroll", () => {
     if (currentSection != 1) {
 
     gsap.to(sectionMeshes[currentSection].rotation, {
-      duration: 1.5,
+      duration: 2,
       ease: "power2.inOut",
       x: "+=6",
       y: "+=3",
