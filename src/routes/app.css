@@ -3,21 +3,14 @@
 :root {
 	--font-body: untitled-sans, sans-serif;
 	--font-header: nb-architekt, sans-serif;
-	--background: #e7e0e0;
-	--primary: #232323;
-	--accent: #232323;
-	--primary-50: #23232380;
-	--column-width: 42rem;
-	--margin: 20px;
-	font-family: var(--font-body);
-	color: var(--color-text);
-}
-
-:root.dark-mode {
 	--background: #232323;
 	--primary: #f0f0f0;
 	--accent: #faeded;
 	--primary-50: #f0f0f080;
+	--column-width: 42rem;
+	--margin: 20px;
+	font-family: var(--font-body);
+	color: var(--color-text);
 }
 
 @font-face {
