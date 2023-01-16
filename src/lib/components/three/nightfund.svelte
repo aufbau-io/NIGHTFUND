@@ -31,11 +31,6 @@ const parameters = {
 let container, id, sizes;
 onMount(() => {
   container.appendChild(renderer.domElement);
-  sizes = {
-    width: window.innerWidth,
-    height: window.innerHeight,
-  };
-
 });
 onDestroy(() => cancelAnimationFrame(id));
 

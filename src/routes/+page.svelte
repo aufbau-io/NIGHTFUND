@@ -27,6 +27,7 @@
 		/* background: var(--background); */
 		/* border: solid 1px var(--primary); */
 		height: 100vh;
+		width: 100%;
 		height: calc(var(--vh, 1vh) * 100);
 	}
 

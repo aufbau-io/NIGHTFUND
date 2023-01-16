@@ -51,9 +51,10 @@
 
 <svelte:component this={Geometry} />
 
-
+{#key $screenType}
+{#if $screenType}
 <div class="app">
-	{#if $screenType}
+
 	<header>
 		<Header />
 	</header>
@@ -65,16 +66,17 @@
 	<!-- <footer>
 		<Footer />
 	</footer> -->
-	{/if}
-</div>
 
+</div>
+{/if}
+{/key}
 
 <style>
 	.app {
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
-		width: 100vw;
+		width: 100%;
 	}
 
 	header {
