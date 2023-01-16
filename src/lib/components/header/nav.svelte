@@ -13,7 +13,7 @@
 </script>
 
 <nav>
-	<p>aufbau</p>
+	<p>night fund</p>
 	{#if $screenType == 3}
 	{#each navItems as navItem}
 		<a href={navItem.href} class="" class:active={navItem.href === $page.url.pathname}

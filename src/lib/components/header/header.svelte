@@ -1,18 +1,20 @@
+
+
 <script>
 	import Nav from './nav.svelte';
 	import { darkMode } from '$lib/store/store';
 	// stub data out
 	const navItems = [
 		{
-			name: 'PROJECTS',
+			name: 'TAB 1',
 			href: '/'
 		},
 		{
-			name: 'ART',
+			name: 'TAb 2',
 			href: '/'
 		},
 		{
-			name: 'ABOUT',
+			name: 'TAB 3',
 			href: '/'
 		},
 	];
@@ -28,12 +30,17 @@
 
 		<Nav {navItems} />
 
+		<div>
+			<p>Revitalising
+				club culture</p>
+		</div>
+
 	<!-- svelte-ignore a11y-click-events-have-key-events -->
-	<div on:click={() => toggleDarkMode()} class="darkMode">
+	<!-- <div on:click={() => toggleDarkMode()} class="darkMode">
 		<p class:selected={$darkMode == false}>day</p>
 		<p class="selected">/</p>
 		<p class:selected={$darkMode == true}>night</p>
-	</div>
+	</div> -->
 </main>
 </header>
 
@@ -71,10 +78,14 @@
 	.darkMode p {
 		line-height: 110%;
 		font-size: 15px;
-		letter-spacing: 0.1em;
+	
 		padding: 10px;
 		cursor: pointer;
 		opacity: 0.4;
+	}
+
+	p {
+		letter-spacing: 0.15em;
 	}
 
 	.darkMode p.selected {

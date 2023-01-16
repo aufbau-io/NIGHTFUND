@@ -10,7 +10,7 @@
 	let Geometry;
 	onMount(async () => {
 
-		const module = await import('$lib/components/three/lorentz.svelte');
+		const module = await import('$lib/components/three/nightfund.svelte');
 		Geometry = module.default;
 
 		// ---------------------------------------------------------------------------
@@ -50,9 +50,9 @@
 		<slot />
 	</main>
 
-	<footer>
+	<!-- <footer>
 		<Footer />
-	</footer>
+	</footer> -->
 	{/if}
 </div>
 
@@ -65,25 +65,27 @@
 	}
 
 	header {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		width: 100%;
+		z-index: 10;
 	}
 
 	footer {
-		position: absolute;
+		position: fixed;
 		bottom: 0;
 		width: 100%;
+		z-index: 10;
 	}
 
 	main {
-		flex: 1;
+		/* flex: 1;
 		display: flex;
-		flex-direction: column;
-		padding: calc(4 * var(--margin)) calc(4 * var(--margin));
+		flex-direction: column; */
+		/* padding: calc(4 * var(--margin)) calc(4 * var(--margin)); */
+
+		/* margin: 0 auto; */
 		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
 		box-sizing: border-box;
 	}
 

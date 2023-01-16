@@ -2,10 +2,11 @@
 
 :root {
 	--font-body: untitled-sans, sans-serif;
-	--font-header: dahlia, sans-serif;
-	--background: #232323;
-	--primary: #f0f0f0;
-	--primary-50: #f0f0f080;
+	--font-header: nb-architekt, sans-serif;
+	--background: #e7e0e0;
+	--primary: #232323;
+	--accent: #232323;
+	--primary-50: #23232380;
 	--column-width: 42rem;
 	--margin: 20px;
 	font-family: var(--font-body);
@@ -13,9 +14,10 @@
 }
 
 :root.dark-mode {
-	--background: #f0f0f0;
-	--primary: #232323;
-	--primary-50: #23232380;
+	--background: #232323;
+	--primary: #f0f0f0;
+	--accent: #faeded;
+	--primary-50: #f0f0f080;
 }
 
 @font-face {
@@ -105,7 +107,7 @@ a:hover {
 }
 
 h1 {
-	font-size: 2.5rem;
+	font-size: 4rem;
 	text-align: center;
 }
 
@@ -141,6 +143,23 @@ button {
 
 button:focus:not(:focus-visible) {
 	outline: none;
+}
+
+/* scrollbar width */
+::-webkit-scrollbar {
+	width: 0px !important;
+	height: 0px !important;
+}
+
+/* scrollbar Track */
+::-webkit-scrollbar-track {
+	background: transparent !important;
+}
+
+/* scrollbar Handle */
+::-webkit-scrollbar-thumb {
+	background: #1b1c1d !important;
+	border-radius: 0;
 }
 
 @media (max-width: 720px) {

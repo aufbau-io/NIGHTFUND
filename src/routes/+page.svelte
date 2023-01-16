@@ -6,28 +6,40 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
-	<h1>
-		DAS AUFBAUZEUG
-	</h1>
-
+<section class="section">
+		<h1>NIGHT FUND</h1>
 </section>
+<section class="section">
+		<h1>THE SPACE</h1>
+</section>
+<section class="section">
+		<h1>THE PROBLEM</h1>
+</section>
+
 
 <style>
 	section {
+		position: relative;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
 		align-items: center;
+		justify-content: flex-start;
 		flex: 1;
-		background: var(--background);
-		border: solid 1px var(--primary);
+		/* background: var(--background); */
+		/* border: solid 1px var(--primary); */
+		height: 100vh;
 	}
 
 	h1 {
 		width: 100%;
-		color: var(--primary);
+		color: var(--background);
 		font-family: var(--font-header);
+		font-weight: 500;
+		-webkit-text-stroke: 1px var(--accent);
+		font-size: 20vh;
 	}
+
+section:nth-child(odd) {
+  justify-content: flex-end;
+}
 
 </style>
