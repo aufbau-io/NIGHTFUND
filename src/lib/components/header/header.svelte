@@ -30,7 +30,7 @@
 
 		<Nav {navItems} />
 
-		<div>
+		<div class="end">
 			<p>Revitalising
 				club culture</p>
 		</div>
@@ -55,7 +55,7 @@
 
 	main {
 		margin: auto;
-		max-width: 100vw;
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -84,6 +84,10 @@
 		opacity: 0.4;
 	}
 
+	.end {
+		padding-right: 10px;
+	}
+
 	p {
 		letter-spacing: 0.15em;
 	}
@@ -93,6 +97,8 @@
 	}
 
 	@media only screen and (max-width: 768px) {
-
+		main {
+			font-size: 16px;
+		}
 	}
 </style>

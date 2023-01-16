@@ -74,6 +74,7 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+		width: 100vw;
 	}
 
 	header {
@@ -97,7 +98,7 @@
 		/* padding: calc(4 * var(--margin)) calc(4 * var(--margin)); */
 
 		/* margin: 0 auto; */
-		width: 100vw;
+		width: 100%;
 		box-sizing: border-box;
 	}
 

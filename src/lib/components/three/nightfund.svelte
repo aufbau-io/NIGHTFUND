@@ -28,9 +28,14 @@ const parameters = {
  * Base
  */
 // Canvas
-let container, id;
+let container, id, sizes;
 onMount(() => {
   container.appendChild(renderer.domElement);
+  sizes = {
+    width: window.innerWidth,
+    height: window.innerHeight,
+  };
+
 });
 onDestroy(() => cancelAnimationFrame(id));
 
@@ -148,7 +153,7 @@ scene.add(particles);
 /**
  * Sizes
  */
-const sizes = {
+sizes = {
   width: window.innerWidth,
   height: window.innerHeight,
 };
