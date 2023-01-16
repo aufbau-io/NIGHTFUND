@@ -90,8 +90,8 @@
 	}
 
 	@media only screen and (max-width: 768px) {
-		main {
+		/* main {
 			padding: calc(4 * var(--margin)) calc(3 * var(--margin));
-		}
+		} */
 	}
 </style>
