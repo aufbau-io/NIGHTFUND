@@ -51,7 +51,6 @@
 
 <svelte:component this={Geometry} />
 
-
 <div class="app">
 	{#if $screenType}
 	<header>
@@ -76,6 +75,8 @@
 		flex-direction: column;
 		min-height: 100vh;
 		width: 100%;
+		
+		background: var(--background);
 	}
 
 	header {

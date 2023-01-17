@@ -13,6 +13,7 @@
 </script>
 
 <nav>
+
 	<p>night fund</p>
 	{#if $screenType == 3}
 	{#each navItems as navItem}
@@ -28,6 +29,7 @@
 
 <style>
 	nav {
+
 		display: flex;
 		flex-flow: comumn nowrap;
 		color: var(--primary);

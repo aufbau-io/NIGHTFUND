@@ -1,7 +1,6 @@
 <script>
 import { onMount, onDestroy } from 'svelte';
 import * as THREE from "three";
-import * as BufferGeometryUtils from 'three/examples/jsm/utils/BufferGeometryUtils.js'
 import { darkMode } from '$lib/store/store';
 // import * as dat from "lil-gui";
 import gsap from "gsap";
@@ -104,6 +103,8 @@ const sectionMeshes = [mesh1, mesh2, mesh3];
   const density = 0.05;
   scene.fog = new THREE.FogExp2(color, density);
 }
+
+// $: scene.fog.color = $darkMode ? black : white;
 
 /**
  * Lights
