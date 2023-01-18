@@ -79,10 +79,10 @@ const mesh3 = new THREE.Mesh(
   new THREE.TorusKnotGeometry(0.8, 0.35, 100, 16),
   material_alt
 );
-const mesh4 = new THREE.Mesh(
-  new THREE.CapsuleGeometry(0.8, 1.4, 8, 64),
-  material_alt
-);
+// const mesh4 = new THREE.Mesh(
+//   new THREE.CapsuleGeometry(0.8, 1.4, 8, 64),
+//   material_alt
+// );
 
 const size = 150;
 const divisions = 50;
@@ -92,12 +92,12 @@ mesh2.material.color = $darkMode ? pink : black;
 mesh1.position.x = 0;
 mesh2.position.x = -1.75;
 mesh3.position.x = 0;
-mesh4.position.x = 0;
+// mesh4.position.x = 0;
 
 mesh1.position.y = -objectsDistance * 0;
 mesh2.position.y = -objectsDistance * 1 - 0.5;
 mesh3.position.y = -objectsDistance * 2 ;
-mesh4.position.y = -objectsDistance * 4;
+// mesh4.position.y = -objectsDistance * 4;
 
 scene.add(mesh1, mesh2, mesh3);
 
@@ -130,7 +130,7 @@ for (let i = 0; i < particlesCount; i++) {
   positions[i * 3 + 0] = (Math.random() - 0.5) * 10;
   positions[i * 3 + 1] =
     objectsDistance * 0.5 -
-    Math.random() * objectsDistance * sectionMeshes.length * 2;
+    Math.random() * objectsDistance * sectionMeshes.length * 1.5;
   positions[i * 3 + 2] = (Math.random() - 0.5) * 10;
 }
 
