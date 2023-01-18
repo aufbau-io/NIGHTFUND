@@ -18,9 +18,9 @@
 		<img src="/nf.svg" alt="logo" />
 </section>
 <section class="section" id="the-space">
-	<h2>NightFund </h2>
+	<h2>Revitalising Club Culture</h2>
 	<div>
-		<h1>THE SPACE</h1>
+		<h1>OUR SPACE</h1>
 	<p>{lorem}</p>
 </div>
 </section>
