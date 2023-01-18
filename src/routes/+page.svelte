@@ -17,10 +17,10 @@
 		<!-- <h1>NIGHT FUND</h1> -->
 		<img src="/nf.svg" alt="logo" />
 </section>
-<section class="section" id="our-space">
+<section class="section culture" id="our-space">
 	<h2>NightFund </h2>
 	<div>
-		<h1>CLUB CULTURE</h1>
+		<h1>OUR SPACE,<br>OUR CULTURE.</h1>
 	<p>{lorem}</p>
 </div>
 </section>

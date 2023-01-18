@@ -103,7 +103,7 @@ mesh3.position.x = 0;
 mesh4.position.x = 1;
 
 mesh1.position.y = -objectsDistance * 0;
-mesh2.position.y = -objectsDistance * 1 - .5;
+mesh2.position.y = -objectsDistance * 1 - .75;
 mesh3.position.y = -objectsDistance * 2 ;
 mesh4.position.y = -objectsDistance * 4 - .5;
 
