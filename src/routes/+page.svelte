@@ -63,7 +63,12 @@
 	</div>
 	<p>{lorem}</p>
 </section>
-
+<section class="section funding">
+	<h1>APPLY FOR FUNDING</h1>
+	<h1>APPLY FOR FUNDING</h1>
+	<h1>APPLY FOR FUNDING</h1>
+	<h1>APPLY FOR FUNDING</h1>
+</section>
 
 <style>
 	section {
@@ -93,6 +98,15 @@
 		padding-left: 80px;
 		gap: 40px;
 	}
+
+	section.funding {
+		flex-flow: column nowrap;
+		max-width: none;
+		padding-left: 80px;
+		gap: 40px;
+		align-items: flex-end;
+	}
+
 
 	section div.menu {
 		width: 600px;

@@ -100,12 +100,12 @@ mesh2.material.color = $darkMode ? pink : black;
 mesh1.position.x = 0;
 mesh2.position.x = 0;
 mesh3.position.x = 0;
-mesh4.position.x = .5;
+mesh4.position.x = 1;
 
 mesh1.position.y = -objectsDistance * 0;
-mesh2.position.y = -objectsDistance * 1 - 0.5;
+mesh2.position.y = -objectsDistance * 1 - .5;
 mesh3.position.y = -objectsDistance * 2 ;
-mesh4.position.y = -objectsDistance * 5 - 0.5;
+mesh4.position.y = -objectsDistance * 5 - .5;
 
 scene.add(mesh1, mesh2, mesh3, mesh4);
 
