@@ -79,6 +79,10 @@ const mesh3 = new THREE.Mesh(
   new THREE.TorusKnotGeometry(0.8, 0.35, 100, 16),
   material_alt
 );
+const mesh4 = new THREE.Mesh(
+  new THREE.CapsuleGeometry(0.8, 1.5, 8, 64),
+  material_alt
+);
 
 const size = 150;
 const divisions = 50;
@@ -88,14 +92,16 @@ mesh2.material.color = $darkMode ? pink : black;
 mesh1.position.x = 0;
 mesh2.position.x = 0;
 mesh3.position.x = 0;
+mesh4.position.x = 0;
 
 mesh1.position.y = -objectsDistance * 0;
 mesh2.position.y = -objectsDistance * 1 - 0.75;
 mesh3.position.y = -objectsDistance * 2;
+mesh4.position.y = -objectsDistance * 3;
 
-scene.add(mesh1, mesh2, mesh3);
+scene.add(mesh1, mesh2, mesh3, mesh4);
 
-const sectionMeshes = [mesh1, mesh2, mesh3];
+const sectionMeshes = [mesh1, mesh2, mesh3, mesh4];
 
 // fog
 {

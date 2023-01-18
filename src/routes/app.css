@@ -1,8 +1,9 @@
 @tailwind base;
 
 :root {
-	--font-body: untitled-sans, sans-serif;
-	--font-header: nb-architekt, sans-serif;
+	--font-body: the-future, sans-serif;
+	--font-header: the-future, sans-serif;
+	--font-mono: the-future-mono, sans-serif;
 	--background: #f0f0f0;
 	--primary: #232323;
 	--accent: #232323;
@@ -66,6 +67,42 @@
 	font-family: nb-architekt;
 	src: url(/fonts/NB-Architekt-Pro-Light.woff) format('woff');
 	font-weight: 400;
+}
+
+@font-face {
+	font-family: the-future;
+	src: url(/fonts/the-future/test-the-future-medium.woff2) format('woff2');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: the-future-mono;
+	src: url(/fonts/the-future/test-the-future-mono-medium.woff2) format('woff2');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: the-future;
+	src: url(/fonts/the-future/test-the-future-regular.woff2) format('woff2');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: the-future-mono;
+	src: url(/fonts/the-future/test-the-future-mono-regular.woff2) format('woff2');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: the-future;
+	src: url(/fonts/the-future/test-the-future-thin.woff2) format('woff2');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: the-future-mono;
+	src: url(/fonts/the-future/test-the-future-mono-thin.woff2) format('woff2');
+	font-weight: 300;
 }
 
 body {

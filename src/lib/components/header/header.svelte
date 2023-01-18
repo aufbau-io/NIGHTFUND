@@ -6,15 +6,15 @@
 	// stub data out
 	const navItems = [
 		{
-			name: 'TAB 1',
+			name: 'THE SPACE',
 			href: '/'
 		},
 		{
-			name: 'TAb 2',
+			name: 'THE PROBLEM',
 			href: '/'
 		},
 		{
-			name: 'TAB 3',
+			name: 'THE SOLUTION',
 			href: '/'
 		},
 	];
@@ -67,11 +67,11 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-
+		font-family: var(--font-mono);
+		text-transform: uppercase;
 		padding: 20px 10px;
 		font-size: 14px;
 		height: calc(3 * var(--margin));
-		font-family: nb-architekt;
 		font-weight: 500;
 	}
 
