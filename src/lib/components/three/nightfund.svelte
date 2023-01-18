@@ -219,21 +219,24 @@ window.addEventListener("scroll", () => {
   if (newSection != currentSection) {
     currentSection = newSection;
 
-    if (currentSection != 1 && currentSection != 3) {
+    if (currentSection == 1) {
 
+      gsap.to(sectionMeshes[currentSection].rotation, {
+      duration: 1,
+      ease: "power2.inOut",
+      y: "+=3",
+    });
+
+          
+  } else if ( currentSection == 3) {
+    //
+  } else {
     gsap.to(sectionMeshes[currentSection].rotation, {
       duration: 1,
       ease: "power2.inOut",
       x: "+=1",
       y: "+=3",
       z: "+=1.5",
-    });
-          
-  } else {
-    gsap.to(sectionMeshes[currentSection].rotation, {
-      duration: 1,
-      ease: "power2.inOut",
-      y: "+=3",
     });
   }
   }
