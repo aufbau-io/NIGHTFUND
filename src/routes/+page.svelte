@@ -50,7 +50,6 @@
 		height: 100vh;
 		width: 100%;
 		max-width: 1200px;
-		max-height: 70%;
 		height: calc(var(--vh, 1vh) * 100);
 
 		padding: 200px 40px 200px 40px;
