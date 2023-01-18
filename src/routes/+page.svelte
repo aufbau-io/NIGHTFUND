@@ -26,7 +26,6 @@
 	<p>{lorem}</p>
 </div>
 </section>
-<section class="section" />
 <section class="section">
 	<h2>NightFund</h2>
 	<div>

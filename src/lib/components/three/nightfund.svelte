@@ -99,9 +99,9 @@ mesh2.position.y = -objectsDistance * 1 - 0.5;
 mesh3.position.y = -objectsDistance * 2 ;
 mesh4.position.y = -objectsDistance * 4;
 
-scene.add(mesh1, mesh2, mesh3, mesh4);
+scene.add(mesh1, mesh2, mesh3);
 
-const sectionMeshes = [mesh1, mesh2, mesh3, mesh4, mesh4];
+const sectionMeshes = [mesh1, mesh2, mesh3, mesh4];
 
 // fog
 {
