@@ -1,4 +1,10 @@
 <script>
+	import { gridLevel } from '$lib/store/store'
+
+	const setGridLevel = (level) => {
+		gridLevel.set(level)
+	}
+
 	let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id est urna. Morbi suscipit tristique mollis. Maecenas a felis et nunc ullamcorper volutpat. Sed sollicitudin libero ac dui porta, ac laoreet neque mattis. Aliquam bibendum rutrum urna, ac tempus lorem cursus eget. Curabitur blandit nisi nec libero tincidunt egestas. Nam varius sem id dui porta, dictum eleifend odio aliquet. Donec viverra neque sapien, et pellentesque sem efficitur et. Donec mattis est eget consequat lacinia. Vivamus quis dolor at neque accumsan sollicitudin. Curabitur turpis neque, tincidunt sit amet blandit in, tempus et elit. Duis mattis odio augue, a venenatis ligula aliquam sed. Vivamus luctus massa a convallis auctor."
 </script>
 
@@ -33,7 +39,30 @@
 	<p>{lorem}</p>
 </div>
 </section>
-
+<section class="section network">
+	<h1>FUNDING GRID</h1>
+	<div class="menu">
+		<h2 class="gridOption" 
+			class:selected="{$gridLevel === 0}"
+			on:click={() => setGridLevel(0)}
+			on:keypress={() => setGridLevel(0)}>
+			Well-Known
+		</h2>
+		<h2 class="gridOption" 
+			class:selected="{$gridLevel === 1}"
+			on:click={() => setGridLevel(1)}
+			on:keypress={() => setGridLevel(1)}>
+			Locally-Known
+		</h2>
+		<h2 class="gridOption" 
+			class:selected="{$gridLevel === 2}"
+			on:click={() => setGridLevel(2)}
+			on:keypress={() => setGridLevel(2)}>
+			Un-Known
+		</h2>
+	</div>
+	<p>{lorem}</p>
+</section>
 
 
 <style>
@@ -58,12 +87,41 @@
 		background: #23232340; */
 	}
 
+	section.network {
+		flex-flow: column nowrap;
+		max-width: none;
+		gap: 40px;
+	}
 
+	section div.menu {
+		width: 700px;
+		display: flex;
+		flex-flow: row nowrap;
+		gap: 12px;
+		justify-content: space-between;
+		padding-bottom: 20px;
+	}
+	
+	.gridOption {
+		padding: 10px;
+		min-width: 30%;
+		text-align: center;
+		border: solid 2px var(--accent);;
+		cursor: pointer;
+		font-size: 1rem;
+	}
 
-	section.head {
-		padding: 120px 40px;
-		background: none;
-		margin: auto;
+	.gridOption:hover {
+		background: var(--background);
+	}
+
+	.gridOption.selected {
+		background: var(--accent);
+		color: var(--background);
+	}
+	
+	section.network p {
+		max-width: 700px;
 	}
 
 	section div div {
@@ -72,7 +130,6 @@
 		align-items: flex-start;
 		max-width: 1500px;
 		gap: 40px;
-
 	}
 
 

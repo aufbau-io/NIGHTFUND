@@ -1,7 +1,7 @@
 <script>
 import { onMount, onDestroy } from 'svelte';
 import * as THREE from "three";
-import { darkMode } from '$lib/store/store';
+import { darkMode, gridLevel } from '$lib/store/store';
 // import * as dat from "lil-gui";
 import gsap from "gsap";
 
@@ -49,6 +49,8 @@ gradientTexture.magFilter = THREE.NearestFilter;
 const material = new THREE.MeshToonMaterial({
   color: parameters.materialColor,
   gradientMap: gradientTexture,
+  transparent: true,
+  opacity: .8
 });
 
 const material_alt = new THREE.MeshToonMaterial({
@@ -79,10 +81,16 @@ const mesh3 = new THREE.Mesh(
   new THREE.TorusKnotGeometry(0.8, 0.35, 100, 16),
   material_alt
 );
-// const mesh4 = new THREE.Mesh(
-//   new THREE.CapsuleGeometry(0.8, 1.4, 8, 64),
-//   material_alt
-// );
+const mesh4a = new THREE.Mesh(new THREE.IcosahedronGeometry(1, 4),material_alt);
+const mesh4b = new THREE.Mesh(new THREE.IcosahedronGeometry(2, 4),material_alt);
+const mesh4c = new THREE.Mesh(new THREE.IcosahedronGeometry(3, 4),material_alt);
+
+$: mesh4a.material = ($gridLevel == 0) ? material : material_alt;
+$: mesh4b.material = ($gridLevel == 1) ? material : material_alt;
+$: mesh4c.material = ($gridLevel == 2) ? material : material_alt;
+
+const mesh4 = new THREE.Group();
+mesh4.add(mesh4a, mesh4b, mesh4c)
 
 const size = 150;
 const divisions = 50;
@@ -92,16 +100,16 @@ mesh2.material.color = $darkMode ? pink : black;
 mesh1.position.x = 0;
 mesh2.position.x = 0;
 mesh3.position.x = 0;
-// mesh4.position.x = 0;
+mesh4.position.x = .5;
 
 mesh1.position.y = -objectsDistance * 0;
 mesh2.position.y = -objectsDistance * 1 - 0.5;
 mesh3.position.y = -objectsDistance * 2 ;
-// mesh4.position.y = -objectsDistance * 4;
+mesh4.position.y = -objectsDistance * 5 - 0.5;
 
-scene.add(mesh1, mesh2, mesh3);
+scene.add(mesh1, mesh2, mesh3, mesh4);
 
-const sectionMeshes = [mesh1, mesh2, mesh3];
+const sectionMeshes = [mesh1, mesh2, mesh3, mesh4];
 
 // fog
 {
