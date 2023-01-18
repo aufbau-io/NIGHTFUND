@@ -106,6 +106,10 @@
 	font-weight: 300;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	min-height: 100vh;
 	margin: 0;

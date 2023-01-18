@@ -219,7 +219,7 @@ window.addEventListener("scroll", () => {
   if (newSection != currentSection) {
     currentSection = newSection;
 
-    if (currentSection != 1) {
+    if (currentSection != 1 && currentSection != 3) {
 
     gsap.to(sectionMeshes[currentSection].rotation, {
       duration: 1,
