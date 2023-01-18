@@ -144,6 +144,7 @@
 
 		text-align: start;
 		font-family: var(--font-header);
+		letter-spacing: 1px;
 		font-weight: 500;
 		-webkit-text-stroke: 1px var(--accent);
 		font-size: 10vh;
