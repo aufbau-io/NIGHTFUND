@@ -90,6 +90,7 @@
 	section.network {
 		flex-flow: column nowrap;
 		max-width: none;
+		padding-left: 80px;
 		gap: 40px;
 	}
 
