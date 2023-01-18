@@ -28,17 +28,17 @@
 <section class="section">
 	<h2>NightFund </h2>
 	<div>
-		<h1>THE PROBLEM</h1>
+		<h1>WHAT ARE WE ?</h1>
 	<p>{lorem}</p>
 </div>
 </section>
-<section class="section">
+<!-- <section class="section">
 	<h2>NightFund</h2>
 	<div>
 		<h1>THE SOLUTION</h1>
 	<p>{lorem}</p>
 </div>
-</section>
+</section> -->
 <section class="section network" id="the-grid">
 	<h1>POWER GRID</h1>
 	<div class="menu">
