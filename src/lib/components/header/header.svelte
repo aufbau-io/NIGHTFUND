@@ -28,12 +28,15 @@
 <header>
 	<main>
 
-		<Nav {navItems} />
-
 		<div class="end">
+			<img src="/nf.svg" alt="logo" />
 			<p>Revitalising
 				club culture</p>
 		</div>
+
+		<Nav {navItems} />
+
+
 
 	<!-- svelte-ignore a11y-click-events-have-key-events -->
 	<!-- <div on:click={() => toggleDarkMode()} class="darkMode">
@@ -45,6 +48,11 @@
 </header>
 
 <style>
+	img {
+		transform: translateY(-25%);
+		height: 200%;
+		padding-right: 10px;
+	}
 	header {
 		user-select: none;
 		color: var(--primary);
@@ -86,6 +94,8 @@
 
 	.end {
 		padding-right: 10px;
+		display: flex;
+		height: 100%;
 	}
 
 	p {
