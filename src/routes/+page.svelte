@@ -17,18 +17,18 @@
 		<!-- <h1>NIGHT FUND</h1> -->
 		<img src="/nf.svg" alt="logo" />
 </section>
-<section class="section">
-	<h2>Revitalising Club Culture</h2>
+<section class="section" id="our-space">
+	<h2>NightFund </h2>
 	<div>
-		<h1>OUR SPACE</h1>
+		<h1>CLUB CULTURE</h1>
 	<p>{lorem}</p>
 </div>
 </section>
 <section class="section" />
-<section class="section" id="about">
-	<h2>NightFund </h2>
+<section class="section" id="mission">
+	<h2>Revitalising Club Culture</h2>
 	<div>
-		<h1>WHAT ARE WE ?</h1>
+		<h1>OUR MISSION</h1>
 	<p>{lorem}</p>
 </div>
 </section>

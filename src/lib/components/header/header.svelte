@@ -10,8 +10,12 @@
 			href: '#'
 		},
 		{
-			name: 'ABOUT',
-			href: '#about'
+			name: 'CLUB CULTURE',
+			href: '#our-space'
+		},
+		{
+			name: 'MISSION',
+			href: '#mission'
 		},
 		{
 			name: 'POWER GRID',
