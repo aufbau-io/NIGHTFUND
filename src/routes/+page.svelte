@@ -53,7 +53,7 @@
 		max-height: 70%;
 		height: calc(var(--vh, 1vh) * 100);
 
-		padding: 120px 40px 120px 40px;
+		padding: 200px 40px 200px 40px;
 		margin: auto;
 		gap: 40px;
 /* 
