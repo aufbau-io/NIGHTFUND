@@ -40,7 +40,7 @@
 </div>
 </section>
 <section class="section network">
-	<h1>FUNDING GRID</h1>
+	<h1>POWER GRID</h1>
 	<div class="menu">
 		<h2 class="gridOption" 
 			class:selected="{$gridLevel === 0}"
@@ -94,7 +94,7 @@
 	}
 
 	section div.menu {
-		width: 700px;
+		width: 600px;
 		display: flex;
 		flex-flow: row nowrap;
 		gap: 12px;
@@ -121,7 +121,7 @@
 	}
 	
 	section.network p {
-		max-width: 700px;
+		max-width: 600px;
 	}
 
 	section div div {

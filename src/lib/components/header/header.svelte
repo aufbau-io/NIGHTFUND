@@ -10,7 +10,7 @@
 			href: '/'
 		},
 		{
-			name: 'FUNDING GRID',
+			name: 'POWER GRID',
 			href: '/'
 		},
 		{
