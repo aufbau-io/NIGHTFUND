@@ -18,14 +18,14 @@
 		<p>{lorem}</p>
 	</div>
 </section>
-<section class="section left">
+<section class="section">
 	<h2>NightFund </h2>
 	<div>
 		<h1>THE PROBLEM</h1>
 	<p>{lorem}</p>
 </div>
 </section>
-<section class="section right">
+<section class="section">
 	<h2>NightFund</h2>
 	<div>
 		<h1>THE SOLUTION</h1>
@@ -47,19 +47,23 @@
 		/* border: solid 1px var(--primary); */
 		height: 100vh;
 		width: 100%;
-		max-width: 1200px;
+		max-width: 1400px;
 		max-height: 70%;
 		height: calc(var(--vh, 1vh) * 100);
 
-		padding: 120PX 40px;
+		padding: 120px 40px 120px 400px;
 		margin: auto;
 		gap: 40px;
 
-		background: #23232360;
+		/* background: #23232340; */
 	}
 
+
+
 	section.head {
-		background: none
+		padding: 120px 40px;
+		background: none;
+		margin: auto;
 	}
 
 	section div {
