@@ -130,7 +130,7 @@ for (let i = 0; i < particlesCount; i++) {
   positions[i * 3 + 0] = (Math.random() - 0.5) * 10;
   positions[i * 3 + 1] =
     objectsDistance * 0.5 -
-    Math.random() * objectsDistance * sectionMeshes.length * 1.5;
+    Math.random() * objectsDistance * sectionMeshes.length * 2;
   positions[i * 3 + 2] = (Math.random() - 0.5) * 10;
 }
 
