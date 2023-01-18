@@ -39,7 +39,7 @@
 	<p>{lorem}</p>
 </div>
 </section>
-<section class="section network">
+<section class="section network" id="the-grid">
 	<h1>POWER GRID</h1>
 	<div class="menu">
 		<h2 class="gridOption" 
@@ -63,7 +63,7 @@
 	</div>
 	<p>{lorem}</p>
 </section>
-<section class="section funding">
+<section class="section funding"  id="apply-for-funding">
 	<h1>APPLY FOR FUNDING</h1>
 	<h1>APPLY FOR FUNDING</h1>
 	<h1>APPLY FOR FUNDING</h1>
@@ -91,7 +91,7 @@
 /* 
 		background: #23232340; */
 	}
-
+	
 	section.network {
 		flex-flow: column nowrap;
 		max-width: none;
@@ -107,6 +107,13 @@
 		align-items: flex-end;
 	}
 
+	section.funding h1 {
+		/* NEEDS FIX ON MID SCREEN */
+		height: 25%;
+		align-items: flex-end;
+		text-align: end;
+		width: 200%;
+	}
 
 	section div.menu {
 		width: 600px;

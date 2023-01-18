@@ -7,15 +7,15 @@
 	const navItems = [
 		{
 			name: 'ABOUT',
-			href: '/'
+			href: '#'
 		},
 		{
 			name: 'POWER GRID',
-			href: '/'
+			href: '#the-grid'
 		},
 		{
 			name: 'APPLY FOR FUNDING',
-			href: '/'
+			href: '#apply-for-funding'
 		},
 	];
 
