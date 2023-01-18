@@ -36,6 +36,7 @@
 
 	h1 {
 		width: 100%;
+		margin: auto;
 		color: var(--background);
 		font-family: var(--font-header);
 		font-weight: 500;
@@ -45,7 +46,7 @@
 
 	img {
 		width: 40vh;
-		margin: auto 0;
+		margin: auto;
 	}
 
 section:nth-child(odd) {
