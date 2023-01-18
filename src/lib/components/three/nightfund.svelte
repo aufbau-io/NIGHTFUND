@@ -90,7 +90,7 @@ const mesh2 = new THREE.GridHelper( size, divisions );
 mesh2.material.color = $darkMode ? pink : black;
 
 mesh1.position.x = 0;
-mesh2.position.x = -1.75;
+mesh2.position.x = 0;
 mesh3.position.x = 0;
 // mesh4.position.x = 0;
 
