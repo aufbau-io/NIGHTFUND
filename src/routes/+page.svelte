@@ -18,6 +18,7 @@
 		<p>{lorem}</p>
 	</div>
 </section>
+<section class="section" />
 <section class="section">
 	<h2>NightFund </h2>
 	<div>
@@ -25,6 +26,7 @@
 	<p>{lorem}</p>
 </div>
 </section>
+<section class="section" />
 <section class="section">
 	<h2>NightFund</h2>
 	<div>
@@ -47,15 +49,15 @@
 		/* border: solid 1px var(--primary); */
 		height: 100vh;
 		width: 100%;
-		max-width: 1400px;
+		max-width: 1200px;
 		max-height: 70%;
 		height: calc(var(--vh, 1vh) * 100);
 
-		padding: 120px 40px 120px 400px;
+		padding: 120px 40px 120px 40px;
 		margin: auto;
 		gap: 40px;
-
-		/* background: #23232340; */
+/* 
+		background: #23232340; */
 	}
 
 

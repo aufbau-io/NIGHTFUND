@@ -91,13 +91,13 @@ mesh2.material.color = $darkMode ? pink : black;
 
 mesh1.position.x = 0;
 mesh2.position.x = -1.75;
-mesh3.position.x = -1.75;
-mesh4.position.x = -1.75;
+mesh3.position.x = 0;
+mesh4.position.x = 0;
 
 mesh1.position.y = -objectsDistance * 0;
 mesh2.position.y = -objectsDistance * 1 - 0.5;
-mesh3.position.y = -objectsDistance * 2 - .5;
-mesh4.position.y = -objectsDistance * 3 - .5;
+mesh3.position.y = -objectsDistance * 2 ;
+mesh4.position.y = -objectsDistance * 4;
 
 scene.add(mesh1, mesh2, mesh3, mesh4);
 
@@ -123,14 +123,14 @@ scene.add(directionalLight);
  * Particles
  */
 // Geometry
-const particlesCount = 200;
+const particlesCount = 400;
 const positions = new Float32Array(particlesCount * 3);
 
 for (let i = 0; i < particlesCount; i++) {
   positions[i * 3 + 0] = (Math.random() - 0.5) * 10;
   positions[i * 3 + 1] =
     objectsDistance * 0.5 -
-    Math.random() * objectsDistance * sectionMeshes.length;
+    Math.random() * objectsDistance * sectionMeshes.length * 2;
   positions[i * 3 + 2] = (Math.random() - 0.5) * 10;
 }
 
