@@ -18,14 +18,14 @@
 		<p>{lorem}</p>
 	</div>
 </section>
-<section class="section">
+<section class="section left">
 	<h2>NightFund </h2>
 	<div>
 		<h1>THE PROBLEM</h1>
 	<p>{lorem}</p>
 </div>
 </section>
-<section class="section">
+<section class="section right">
 	<h2>NightFund</h2>
 	<div>
 		<h1>THE SOLUTION</h1>
@@ -55,7 +55,7 @@
 		margin: auto;
 		gap: 40px;
 
-		background: #23232340;
+		background: #23232360;
 	}
 
 	section.head {
@@ -94,12 +94,12 @@
 	h2 {
 		font-weight: 500;
 		font-size: 2rem;
-		font-family: the-future-mono;
+		font-family: var(--font-mono)
 	}
 
 	p {
 		font-weight: 300;
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 	}
 
 section:nth-child(odd) {
