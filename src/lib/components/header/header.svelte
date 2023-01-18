@@ -6,8 +6,12 @@
 	// stub data out
 	const navItems = [
 		{
+			name: 'NIGHTFUND',
+			href: '#'
+		},
+		{
 			name: 'ABOUT',
-			href: '#the-space'
+			href: '#about'
 		},
 		{
 			name: 'POWER GRID',

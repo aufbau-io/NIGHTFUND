@@ -17,7 +17,7 @@
 		<!-- <h1>NIGHT FUND</h1> -->
 		<img src="/nf.svg" alt="logo" />
 </section>
-<section class="section" id="the-space">
+<section class="section">
 	<h2>Revitalising Club Culture</h2>
 	<div>
 		<h1>OUR SPACE</h1>
@@ -25,7 +25,7 @@
 </div>
 </section>
 <section class="section" />
-<section class="section">
+<section class="section" id="about">
 	<h2>NightFund </h2>
 	<div>
 		<h1>WHAT ARE WE ?</h1>
