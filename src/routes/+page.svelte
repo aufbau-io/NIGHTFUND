@@ -12,11 +12,11 @@
 		<img src="/nf.svg" alt="logo" />
 </section>
 <section class="section">
-		<h2>NightFund </h2>
-		<div>
-			<h1>THE SPACE</h1>
-		<p>{lorem}</p>
-	</div>
+	<h2>NightFund </h2>
+	<div>
+		<h1>THE SPACE</h1>
+	<p>{lorem}</p>
+</div>
 </section>
 <section class="section" />
 <section class="section">
@@ -46,12 +46,12 @@
 		flex: 1;
 		/* background: var(--background); */
 		/* border: solid 1px var(--primary); */
-		height: 100vh;
+		height: 100%;
 		width: 100%;
 		max-width: 1200px;
 		height: calc(var(--vh, 1vh) * 100);
 
-		padding: 200px 40px 200px 40px;
+		padding: 120px 40px;
 		margin: auto;
 		gap: 40px;
 /* 
@@ -66,7 +66,7 @@
 		margin: auto;
 	}
 
-	section div {
+	section div div {
 		display: flex;
 		flex-flow: column nowrap;
 		align-items: flex-start;
@@ -74,6 +74,7 @@
 		gap: 40px;
 
 	}
+
 
 	h2 {
 		min-width: 280px;
