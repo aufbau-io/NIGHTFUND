@@ -7,7 +7,8 @@
 </svelte:head>
 
 <section class="section">
-		<h1>NIGHT FUND</h1>
+		<!-- <h1>NIGHT FUND</h1> -->
+		<img src="/nf.svg" alt="logo" />
 </section>
 <section class="section">
 		<h1>THE SPACE</h1>
@@ -21,6 +22,7 @@
 	section {
 		position: relative;
 		display: flex;
+		flex-flow: column nowrap;
 		align-items: center;
 		justify-content: flex-start;
 		flex: 1;
@@ -29,6 +31,7 @@
 		height: 100vh;
 		width: 100%;
 		height: calc(var(--vh, 1vh) * 100);
+
 	}
 
 	h1 {
@@ -38,6 +41,11 @@
 		font-weight: 500;
 		-webkit-text-stroke: 1px var(--accent);
 		font-size: 20vh;
+	}
+
+	img {
+		width: 40vh;
+		margin: auto 0;
 	}
 
 section:nth-child(odd) {
