@@ -6,15 +6,15 @@
 	// stub data out
 	const navItems = [
 		{
-			name: 'THE SPACE',
+			name: 'ABOUT',
 			href: '/'
 		},
 		{
-			name: 'THE PROBLEM',
+			name: 'FUNDING GRID',
 			href: '/'
 		},
 		{
-			name: 'THE SOLUTION',
+			name: 'APPLY FOR FUNDING',
 			href: '/'
 		},
 	];
