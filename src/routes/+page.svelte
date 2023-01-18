@@ -17,7 +17,7 @@
 		<!-- <h1>NIGHT FUND</h1> -->
 		<img src="/nf.svg" alt="logo" />
 </section>
-<section class="section">
+<section class="section" id="the-space">
 	<h2>NightFund </h2>
 	<div>
 		<h1>THE SPACE</h1>

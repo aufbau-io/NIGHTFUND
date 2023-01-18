@@ -7,7 +7,7 @@
 	const navItems = [
 		{
 			name: 'ABOUT',
-			href: '#'
+			href: '#the-space'
 		},
 		{
 			name: 'POWER GRID',
@@ -28,11 +28,11 @@
 <header>
 	<main>
 
-		<div class="end">
+		<a class="end" href="#">
 			<img src="/nf.svg" alt="logo" />
 			<p>Revitalising
 				club culture</p>
-		</div>
+		</a>
 
 		<Nav {navItems} />
 
