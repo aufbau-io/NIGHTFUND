@@ -1,5 +1,5 @@
 <script>
-	import { gridLevel } from '$lib/store/store'
+	import { gridLevel, iframe } from '$lib/store/store'
 
 	const setGridLevel = (level) => {
 		gridLevel.set(level)
@@ -17,6 +17,7 @@
 		<!-- <h1>NIGHT FUND</h1> -->
 		<img src="/nf.svg" alt="logo" />
 </section>
+{#if !$iframe}
 <section class="section culture" id="our-space">
 	<h2>NightFund </h2>
 	<div>
@@ -69,6 +70,7 @@
 	<h1>APPLY FOR FUNDING</h1>
 	<h1>APPLY FOR FUNDING</h1>
 </section>
+{/if}
 
 <style>
 	section {

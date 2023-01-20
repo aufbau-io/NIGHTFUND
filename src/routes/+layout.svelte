@@ -2,7 +2,7 @@
 	import './app.css';
 
 	import { onMount } from 'svelte';
-	import { screenType, is_iframe } from '$lib/store/store';
+	import { screenType, iframe } from '$lib/store/store';
 
 	import Header from '$lib/components/header/header.svelte';
 	import Footer from '$lib/components/footer/footer.svelte';
@@ -44,7 +44,7 @@
 
 		if (window.location !== window.parent.location) {
 			// The page is in an iframe
-			is_iframe.set(true);
+			iframe.set(true);
 		}
 	});
 </script>
