@@ -2,7 +2,7 @@
 
 <script>
 	import Nav from './nav.svelte';
-	import { darkMode, iframe } from '$lib/store/store';
+	import { darkMode } from '$lib/store/store';
 	// stub data out
 	const navItems = [
 		{
@@ -42,9 +42,7 @@
 				club culture</p>
 		</a>
 
-		{#if !$iframe}		
 		<Nav {navItems} />
-		{/if}
 
 
 
