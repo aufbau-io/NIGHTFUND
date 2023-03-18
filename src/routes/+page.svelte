@@ -1,12 +1,11 @@
 <script>
-	import { gridLevel } from '$lib/store/store';
+	import { gridLevel } from '$lib/store/store'
 
 	const setGridLevel = (level) => {
-		gridLevel.set(level);
-	};
+		gridLevel.set(level)
+	}
 
-	let lorem =
-		'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id est urna. Morbi suscipit tristique mollis. Maecenas a felis et nunc ullamcorper volutpat. Sed sollicitudin libero ac dui porta, ac laoreet neque mattis. Aliquam bibendum rutrum urna, ac tempus lorem cursus eget. Curabitur blandit nisi nec libero tincidunt egestas. Nam varius sem id dui porta, dictum eleifend odio aliquet. Donec viverra neque sapien, et pellentesque sem efficitur et. Donec mattis est eget consequat lacinia. Vivamus quis dolor at neque accumsan sollicitudin. Curabitur turpis neque, tincidunt sit amet blandit in, tempus et elit. Duis mattis odio augue, a venenatis ligula aliquam sed. Vivamus luctus massa a convallis auctor.';
+	let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id est urna. Morbi suscipit tristique mollis. Maecenas a felis et nunc ullamcorper volutpat. Sed sollicitudin libero ac dui porta, ac laoreet neque mattis. Aliquam bibendum rutrum urna, ac tempus lorem cursus eget. Curabitur blandit nisi nec libero tincidunt egestas. Nam varius sem id dui porta, dictum eleifend odio aliquet. Donec viverra neque sapien, et pellentesque sem efficitur et. Donec mattis est eget consequat lacinia. Vivamus quis dolor at neque accumsan sollicitudin. Curabitur turpis neque, tincidunt sit amet blandit in, tempus et elit. Duis mattis odio augue, a venenatis ligula aliquam sed. Vivamus luctus massa a convallis auctor."
 </script>
 
 <svelte:head>
@@ -15,32 +14,31 @@
 </svelte:head>
 
 <section class="section head">
-	<!-- <h1>NIGHT FUND</h1> -->
-	<img src="/nf.svg" alt="logo" />
+		<!-- <h1>NIGHT FUND</h1> -->
+		<img src="/nf.svg" alt="logo" />
 </section>
 <section class="section culture" id="our-space">
-	<h2>NightFund</h2>
+	<h2>NightFund </h2>
 	<div>
-		<h1>OUR SPACE,<br />OUR CULTURE.</h1>
-		<p>{lorem}</p>
-	</div>
+		<h1>OUR SPACE,<br>OUR CULTURE.</h1>
+	<p>{lorem}</p>
+</div>
 </section>
 <section class="section" />
 <section class="section" id="mission">
 	<h2>Revitalising Club Culture</h2>
 	<div>
 		<h1>OUR MISSION</h1>
-		<p>{lorem}</p>
-	</div>
+	<p>{lorem}</p>
+</div>
 </section>
-<section class="section">
+<!-- <section class="section">
 	<h2>NightFund</h2>
 	<div>
 		<h1>THE SOLUTION</h1>
-		<p>{lorem}</p>
-	</div>
-</section>
-
+	<p>{lorem}</p>
+</div>
+</section> -->
 <!-- <section class="section network" id="the-grid">
 	<h1>POWER GRID</h1>
 	<div class="menu">
@@ -71,6 +69,7 @@
 	<h1>APPLY FOR FUNDING</h1>
 	<h1>APPLY FOR FUNDING</h1>
 </section> -->
+
 <style>
 	section {
 		position: relative;
@@ -89,10 +88,10 @@
 		padding: 120px 40px;
 		margin: auto;
 		gap: 40px;
-		/* 
+/* 
 		background: #23232340; */
 	}
-
+	
 	section.network {
 		flex-flow: column nowrap;
 		max-width: none;
@@ -124,12 +123,12 @@
 		justify-content: space-between;
 		padding-bottom: 20px;
 	}
-
+	
 	.gridOption {
 		padding: 10px;
 		min-width: 30%;
 		text-align: center;
-		border: solid 2px var(--accent);
+		border: solid 2px var(--accent);;
 		cursor: pointer;
 		font-size: 1rem;
 	}
@@ -142,7 +141,7 @@
 		background: var(--accent);
 		color: var(--background);
 	}
-
+	
 	section.network p {
 		max-width: 600px;
 	}
@@ -154,6 +153,7 @@
 		max-width: 1500px;
 		gap: 40px;
 	}
+
 
 	h2 {
 		min-width: 280px;
@@ -179,7 +179,7 @@
 	h2 {
 		font-weight: 500;
 		font-size: 2rem;
-		font-family: var(--font-mono);
+		font-family: var(--font-mono)
 	}
 
 	p {
@@ -187,7 +187,8 @@
 		font-size: 1.4rem;
 	}
 
-	section:nth-child(odd) {
-		justify-content: flex-end;
-	}
+section:nth-child(odd) {
+  justify-content: flex-end;
+}
+
 </style>
