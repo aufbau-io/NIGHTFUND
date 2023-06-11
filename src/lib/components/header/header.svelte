@@ -17,14 +17,6 @@
 			name: 'MISSION',
 			href: '#mission'
 		},
-		{
-			name: 'POWER GRID',
-			href: '#the-grid'
-		},
-		{
-			name: 'APPLY FOR FUNDING',
-			href: '#apply-for-funding'
-		},
 	];
 
 	let toggleDarkMode = () => {
